@@ -1,3 +1,13 @@
-<p>
-  example-normal works!
-</p>
+<h1>Personagem</h1>
+<section *ngIf="people">
+  <p>Nome: {{ people.name }}</p>
+  <p>Nascimento: {{ people.birth_year }}</p>
+  <p>Cor do Olho: {{ people.eye_color }}</p>
+</section>
+<br />
+<h1>Planeta</h1>
+<section *ngIf="planet">
+  <p>Nome: {{ planet.name }}</p>
+  <p>Gravidade: {{ planet.gravity }}</p>
+  <p>População: {{ planet.population }}</p>
+</section>
